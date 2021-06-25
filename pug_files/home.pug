@@ -1,0 +1,141 @@
+extends base.pug
+
+//- block scripts
+//-   script(src='/jquery.js')
+//-   script(src='/pets.js')
+
+block style 
+  style 
+   include ../static/style.css
+
+block content
+  header#header
+    div
+      // logo
+      img(src='../static/images/logo-p2.jpg' alt='')
+      h6 FOODIES &nbsp; VILLA 
+  #bg
+    // ------------------------------------------------ navigation -------------------------------------------
+    nav
+      ul#nav
+        li#nav_1
+          a(href='#nav') HOME
+        li#nav_2
+          a(href='#sec2') OUR MENU
+        li#nav_3
+          a(href='#about') ABOUT
+        li#nav_4
+          a(href='/contact') ONLINE ORDER
+    // ----------------------------------------------------- section -------------------------------------------
+    // ------------------- section 1(home) ------------------
+    section#home
+      #address
+        h2 VISIT US
+        .h_class
+          div FOODIES &nbsp; VILLA
+          #address_
+            | Behind Harihar chamber, Savtri Complex, Boring Road, SriKrishnapuri, Patna,
+            | Bihar,India
+            #timing Opening : 11a.m. to 10p.m.
+      button
+        a(href='/contact') ORDER NOW
+  // ------------------- section 2(our menu) ------------------
+  section#sec2
+    h4 OUR &nbsp; MENU 
+    .ourMenu
+      .menu_class
+        img.image(src='../static/images/food_img1.jpg' alt='')
+        .menu_name
+          | Fried Chicken and RIce
+          .money Rs 499/-
+      .menu_class
+        img.image(src='../static/images/food_img2.jpg' alt='')
+        .menu_name
+          | Fried Fish and RIce
+          .money Rs 469/-
+      .menu_class
+        img.image(src='../static/images/food_img3.jpg' alt='')
+        .menu_name
+          | Egg Curry and RIce
+          .money Rs 399/-
+    .ourMenu
+      .menu_class
+        img.image(src='../static/images/food_img4.jpg' alt='')
+        .menu_name
+          | Chana Kulcha
+          .money Rs 210/-
+      .menu_class
+        img.image(src='../static/images/food_img8.jpg' alt='')
+        .menu_name
+          | Dosa
+          .money Rs 199/-
+      .menu_class
+        img.image(src='../static/images/food_img6.jpg' alt='')
+        .menu_name
+          | Burger
+          .money Rs 169/-
+  // ------------------- section 3(about) ------------------
+  section#about
+    h4 ABOUT 
+    #sec3
+      // box1
+      .sec3a
+        h5.sec3b Service Option
+        .sec3c
+          ul
+            li Delivery
+            li Take-away
+            li Dine-in
+      // box2
+      .sec3a
+        h5.sec3b Amenities
+        .sec3c
+          ul
+            li Good for kids
+      // box3
+      .sec3a
+        h5.sec3b Atmosphere
+        .sec3c
+          ul
+            li Casual
+      // box4
+      .sec3a
+        h5.sec3b Crowd
+        .sec3c
+          ul
+            li Groups
+      // box5
+      .sec3a
+        h5.sec3b Payments
+        .sec3c
+          ul
+            li Cash
+            li Google Pay
+            li Phone Pay
+            li Paytm
+block foot
+  #footer
+    p copyright &copy; foodiesvilla.com    
+    
+  This Restaurant Website has a home page and a landing page.
+
+  The home page is divided into several following sections :-
+  -> A header section having logo and name of restaurant.
+  -> A navigation section.
+  -> Home section 
+  -> Menu section 
+  -> About section 
+  -> Footer section 
+
+  The landing page has a header, navigation, contact and a footer section.
+  
+  This is the Restaurant Website having a home page and a landing contact page in which
+-> users will submit the information asked like name,email,phone number,name of dishes,address.
+-> and data will be stored in record.txt file.
+
+Tools used:-
+->Pure Pug
+->CSS
+->JavaScript
+->Express
+->Node.js

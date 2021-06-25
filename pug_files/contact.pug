@@ -1,0 +1,48 @@
+extends base.pug
+
+block style 
+  style 
+     include ../static/styleContact.css
+block content 
+  header#header
+    div
+      // logo
+      img(src='../static/images/logo-p2.jpg' alt='')
+      h6 FOODIES &nbsp; VILLA 
+  #bg
+    // ----------------------------------------------------- navigation -------------------------------------------
+    nav
+      ul#nav
+        li#nav_1
+          a(href='#nav') HOME
+        li#nav_2
+          a(href='#sec2') OUR MENU
+        li#nav_3
+          a(href='#about') ABOUT
+        li#nav_4
+          a(href='/contact') ONLINE ORDERING
+    // ----------------------------------------------------- online order -------------------------------------------
+  section#sec4
+    p#s4_tittle Online Order
+    #sec4_
+      form(action="/" method="post")
+        .sec4a
+          label(for='name') Name: 
+          input(type='text' name='name' placeholder='Enter your name')
+        .sec4a
+          label(for='email') Email: 
+          input(type='text' name='email' placeholder='Enter your email')
+        .sec4a
+          label(for='phone') Phone Number: 
+          input(type='number' name='phone_number' placeholder='Enter your phone number')
+        .sec4a
+          label(for='Your Orders') Your Orders: 
+          textarea(name='orders' cols='30' rows='10' )
+        .sec4a
+          label(for='address') Address: 
+          textarea(name='address' cols='30' rows='10' placeholder='Enter your address')
+        input#submit(type='submit' value='Order Now')   
+block foot
+  #footer
+    p copyright &copy; foodiesvilla.com
+  

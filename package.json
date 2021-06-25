@@ -1,0 +1,16 @@
+{
+  "name": "restaurant-website",
+  "version": "2.0.0",
+  "description": "This is a very popular restaurant in India which serves palatable food with good quality and quantity. Also it has rating of 4.8/5",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankita Chandra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,143 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Best Restaurant in Patna
+  // inluding external css file
+  link(rel='stylesheet' href='../static/style.css')
+  link(rel='stylesheet' href='../static/styleContact.css')
+  
+  // for fonts
+  // font1
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Pacifico&display=swap' rel='stylesheet')
+  // font2
+  link(href='https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap' rel='stylesheet')
+// ----------------------------------------------------- header -------------------------------------------
+header#header
+  div
+    // logo
+    img(src='../static/images/logo-p2.jpg' alt='')
+    h6 FOODIES &nbsp; VILLA 
+#bg
+  // ----------------------------------------------------- navigation -------------------------------------------
+  nav
+    ul#nav
+      li#nav_1
+        a(href='#nav') HOME
+      li#nav_2
+        a(href='#sec2') OUR MENU
+      li#nav_3
+        a(href='#about') ABOUT
+      li#nav_4
+        a(href='#sec4') ONLINE ORDERING
+  // ----------------------------------------------------- section -------------------------------------------
+  // ------------------- section 1(home) ------------------
+  section#home
+    #address
+      h2 VISIT US
+      .h_class
+        div FOODIES &nbsp; VILLA
+        #address_
+          | Behind Harihar chamber, Savtri Complex, Boring Road, SriKrishnapuri, Patna,
+          | Bihar,India
+          #timing Opening : 11a.m. to 10p.m.
+    button
+      a(href='#sec4') ORDER NOW
+// ------------------- section 2(our menu) ------------------
+section#sec2
+  h4 OUR &nbsp; MENU 
+  .ourMenu
+    .menu_class
+      img.image(src='../static/images/food_img1.jpg' alt='')
+      .menu_name
+        | Fried Chicken and RIce
+        .money Rs 499/-
+    .menu_class
+      img.image(src='../static/images/food_img2.jpg' alt='')
+      .menu_name
+        | Fried Fish and RIce
+        .money Rs 469/-
+    .menu_class
+      img.image(src='../static/images/food_img3.jpg' alt='')
+      .menu_name
+        | Egg Curry and RIce
+        .money Rs 399/-
+  .ourMenu
+    .menu_class
+      img.image(src='../static/images/food_img4.jpg' alt='')
+      .menu_name
+        | Chana Kulcha
+        .money Rs 210/-
+    .menu_class
+      img.image(src='../static/images/food_img8.jpg' alt='')
+      .menu_name
+        | Dosa
+        .money Rs 199/-
+    .menu_class
+      img.image(src='../static/images/food_img6.jpg' alt='')
+      .menu_name
+        | Burger
+        .money Rs 169/-
+// ------------------- section 3(about) ------------------
+section#about
+  h4 ABOUT 
+  #sec3
+    // box1
+    .sec3a
+      h5.sec3b Service Option
+      .sec3c
+        ul
+          li Delivery
+          li Take-away
+          li Dine-in
+    // box2
+    .sec3a
+      h5.sec3b Amenities
+      .sec3c
+        ul
+          li Good for kids
+    // box3
+    .sec3a
+      h5.sec3b Atmosphere
+      .sec3c
+        ul
+          li Casual
+    // box4
+    .sec3a
+      h5.sec3b Crowd
+      .sec3c
+        ul
+          li Groups
+    // box5
+    .sec3a
+      h5.sec3b Payments
+      .sec3c
+        ul
+          li Cash
+          li Google Pay
+          li Phone Pay
+          li Paytm
+// ------------------- section 4(online ordering) ------------------
+section#sec4
+  p#s4_tittle Online Ordering
+  #sec4_
+    form(action='')
+      .sec4a
+        label(for='name') Name: 
+        input(type='text' name='name' placeholder='Enter your name')
+      .sec4a
+        label(for='email') Email: 
+        input(type='email' name='name' placeholder='Enter your email')
+      .sec4a
+        label(for='phone') Phone Number: 
+        input(type='phone' name='name' placeholder='Enter your phone')
+      .sec4a
+        label(for='address') Address: 
+        textarea(name='address' cols='30' rows='10' placeholder='Enter your address')
+  input#submit(type='submit' value='Order Now')
+// ----------------------------------------------------- footer -------------------------------------------
+footer
+  p copyright &copy; foodiesvilla.com

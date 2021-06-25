@@ -1,0 +1,175 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+/* ---------------------------------------------------header---------------------------------------------- */
+header{
+    background-color:rgb(194, 182, 182);  
+    
+}
+header div{
+    width:60%;
+    height:65px;
+    display:flex;
+    margin:-5px auto;
+    justify-content: center;
+    
+}
+header img{
+    height: 70px;
+    width: 121px;
+    margin: -4px 0px;
+}
+header h6{
+    font-family: 'Pacifico', cursive;
+    margin: 14px -28px;
+    padding: 7px 11px;
+    font-size: 26px;
+}
+
+/* ---------------------------------------------------navigation---------------------------------------------- */
+nav{
+    background-color:rgb(0,0,0,0.5);
+}
+nav #nav{
+    width: 35%;
+    height: 44px;    
+    margin: 0px auto;
+    display: flex;
+    /* padding: -1px 6px; */
+    position: sticky;
+    
+}
+nav #nav li{
+    list-style: none;
+    padding:0px 16px;
+    margin:4px auto;
+    border:2px solid white;
+    background-color: white;    
+    border-radius: 4px;
+    text-align: center;
+      
+}
+nav #nav li a{
+    background-color:rgba(248, 219, 224,0.1);
+    text-decoration: none;
+    text-align :center;
+    color:black;
+    /* margin:3px 2px;    */
+    font-family: 'Bodoni Moda', serif;
+    font-size: 20px;
+    font-weight: bold;   
+    
+}
+nav #nav li a:hover{
+    /* background-color: black;    */
+    color:rgb(223, 29, 29);
+}
+nav #nav li a:active{
+      color:gray;   
+}
+#bg::before{
+    content:"";
+    position:absolute;
+    background-image: url("/static/images/bg-img1.jpg");
+    height:44px;
+    width:100%;
+    z-index:-1;   
+    opacity: 0.5; 
+}
+/* -----------------section 4(online ordering ) -----------------*/
+#s4_tittle {
+    color: black;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 37px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 4px 2px;
+}
+
+#sec4_ {
+    color: white;
+    display: block;
+    height: 629px;
+    width: 28%;
+    margin: 2px auto;
+    padding: 2px 2px;
+}
+#sec4_ {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form label{
+    font-size: 23px;
+    color:black;
+    margin:2px;
+    padding:2px 4px;
+}
+form input{
+    width: 636px;
+    height: 40px;
+    font-size: 20px;
+    margin:2px;
+    padding:2px 30px;
+    border-radius: 9px;
+}
+form textarea{    
+    width: 636px;
+    height: 150px;
+    font-size: 23px;
+    margin:2px;
+    padding:2px 30px;
+    border-radius: 9px;
+}
+
+#sec4a {
+    width: 100%;
+    height: 50px;
+}
+#sec4::before {
+    content: "";
+    position: absolute;
+    background-image: url("../static/images/bg_img4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 709px;
+    width: 100%;
+    z-index: -1;
+}
+
+#submit {
+    background-color:rgba(49, 47, 47, 0.8);
+    text-decoration: none;
+    border:2px solid black;
+    border-radius: 17px;
+    font-size: 31px;
+    color: rgb(145, 255, 0);
+    font-weight: bold;
+    display: block;
+    width: 213px;
+    margin: 15px auto;
+    margin-bottom: 46px;
+}
+#submit:hover{
+    background-color: rgba(184, 204, 241, 0.5);
+    cursor: pointer;
+    color:white;            
+}
+#submit:active{
+    background-color: rgba(184, 204, 241, 0.5);
+    cursor: pointer;
+    color:rgb(9, 14, 9);            
+}
+/* ---------------------------------------------------footer---------------------------------------------- */
+#footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    height:36px;
+    font-size: 23px;
+}
